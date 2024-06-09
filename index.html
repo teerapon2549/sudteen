@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sudteen.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <title>SudTeen</title>
+</head>
+<body>
+  <div class="container bg">
+    <div class="navBar">
+      <div class="logo">
+        <a href="#">
+         
+        </a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="phuket" style="width:50%;">
+        <div class="tnx">
+          <h2><i class="fa-solid fa-basketball"></i> Basketball</h2>
+        </div>
+        <div class="txt">
+          <h1>SUD</h1>
+          <h1>TEEN</h1>
+        </div>
+        <p>สวัสดีครับ เว็ปไซต์นี้ผมจะมาแนะนำรองเท้าที่ดีและควรใส่สักครั้งในชีวิตถ้าเราชอบเล่นกีฬาเล่นบาสเกตบอล รองเท้าทุกคู่ที่ผมนำมารีวิวนั้นเป็นรองเท้าที่ผมชอบและผู้เล่นใน NBA ก็ใส่ในการแข่งขัน และการรีวิวของผมนั้นผมได้มีประสบการณ์ใส่เล่นมาแล้วทุกคู่ จึงอยากนำมาเล่าและรีวิวให้ฟังครับ เพื่อช่วยในการประกอบการตัดสินใจสำหรับคนที่กำลังมองหารองเท้าดีๆสักคู่มาใส่เล่นในกีฬาบาสเกตบอลที่เรารักกันครับ</p>
+      </div>
+      <div class="card" style="width:50%;">
+          <div class="box1" id="box1">
+            <h2>Lebron 20</h2>
+          </div>
+          <div class="box2" id="box2">
+            <h2>JA 1</h2>
+          </div>
+          <div class="box3" id="box3">
+            <h2>JT1</h2>
+          </div>
+          <div class="box4" id="box4">
+            <h2>G.T.CUT 2</h2>
+          </div>
+          <div class="box5" id="box5">
+            <h2>MB.02</h2>
+          </div>
+          <div class="box6" id="box6">
+            <h2>MB.03</h2>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div id="modaldesc" class="modal">
+    <div onclick="closeModal()" class=""></div>
+    <div class="modal-page">
+        <button class="close-button" onclick="closeModal()">X</button>
+        
+        <div class="modalscroll">
+            <h1 id="mdd-name">Lebron 20</h1>
+        <div class="modaldesc-content">
+            <img id="mdd-img" class="modaldesc-img" src="https://i.ebayimg.com/images/g/maMAAOSwNQ5kH4ee/s-l1200.jpg" alt="">
+            <div class="modaldesc-detail">
+                <p id="mdd-traction" style="font-size: 1.5vw;">Traction</p>
+                <p id="mdd-traction-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, laboriosam?</p>
+                <br>
+                <br>
+
+                <p id="mdd-cushion" style="font-size: 1.5vw;">Cushion</p>
+                <p id="mdd-cushion-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, laboriosam?</p>
+                <br>
+                <br>
+
+                <p id="mdd-lockdown" style="font-size: 1.5vw;">Lockdown</p>
+                <p id="mdd-lockdown-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, laboriosam?</p>
+                <br>
+                <br>
+
+                <p id="mdd-weight" style="font-size: 1.5vw;">Design</p>
+                <p id="mdd-weight-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, laboriosam?</p>
+                <br>
+                <br>
+
+                               
+          
+            </div>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    var product = [
+      {
+        id: 1,
+        img: '/photo/ภาพถ่ายหน้าจอ 2567-06-02 เวลา 18.06.51.png',
+        name: 'Lebron 20',
+        traction: 'Traction',
+        tractiondetail: 'ระบบเบรคของ Lebron 20 นี้ ค่อนข้างทำออกมาได้น่าประทับใจ ตอนที่ใส่รู้สึกได้เลยว่าเบรคหนึบมากๆ เหมือนเบรคหัวทิ่มได้เลย เสียงเบรคของรองเท้าค่อนข้างดัง ถ้าเป็นคนชอบเสียงเบรคดังๆถือว่าไม่ควรพลาด',
+        cushion: 'Cushion',
+        cushiondetail: 'ระบบรองรับแรงกระแทกถือว่าทำออกมาได้ดีมาก ความรู้สึกที่ใส่นิ่มมากๆฟีลลิ่งเหมือนเหยียบหรือเดินบนเตียงเลย แต่ส่วนตัวคิดว่าไม่ค่อยมีแรงดีดเมื่อวิ่ง',
+        lockdown: 'Lockdown',
+        lockdowndetail: 'ตัวรองเท้าออกแบบมาให้อยู่ในข้อต่ำทำให้มีความรู้สึกใส่สบาย ตัวข้อรองเท้าไม่สูงเกิน แต่ก็แรกมากับการถ้าเราผูกเชือกรองเท้าไม่ดีก็จะทำให้มีโอกาสขาพลิกได้ง่าย',
+        weight: 'Design',
+        weightdetail: 'การออกแบบถือว่ามีการออกแบบตรงโลโก้ได้อย่างมีเอกลักษณ์แต่ตัวผ้าที่นำมาเย็บเป็นรองเท้าเป็นเส้นใยถักทำให้ทำความสะอาดได้ยาก และถ้านำแปรงแข็งมาขัดก็จะทำให้รองเท้าพังและเกิดขุย',
+        type: '1'
+      },
+      {
+        id: 2,
+        img: '/photo/ภาพถ่ายหน้าจอ 2567-06-02 เวลา 18.07.20.png',
+        name: 'JA 1',
+        traction: 'Traction',
+        tractiondetail: 'ระบบเบรคของรอง JA 1 ค่อนข้างทำออกมาได้คล้ายคลึงกับตัวของLebron 20 แต่ต่างกันที่เสียงเบรคจะเบากว่า และการเบรคไม่หนึบเท่าตัวของLebron 20',
+        cushion: 'Cushion',
+        cushiondetail: 'ความรู้สึกครั้งแรกที่ใส่ค่อนข้างจะนุ่มแต่ไม่ถึงกับนุ่มมากอยู่ในระดับโอเค แต่เรื่องที่รองเท้าคู่นี้ทำออกมาได้ดีคือแรงดีดจากรองเท้าตอนใส่วิ่งรู้สึกมีแรงดีดจากหน้าเท้ามาทำให้เวลาไปใส่เล่นแล้วค่อนข้างสนุกกับแรงดีด',
+        lockdown: 'Lockdown',
+        lockdowndetail: 'ตัวรองออกแบบในรูปแบบของข้อต่ำใส่แล้วขยับข้อเท้าได้อย่างอิสระ ทำให้เวลาใส่เล่นแล้วต้องมัดเชือกรองเท้าให้ดีไม่งั้นอาจทำให้ขาพลิกตอนเล่นได้ ',
+        weight: 'Weight',
+        weightdetail: 'การออกแบบถือว่าออกแบบได้ไม่เหมือนใครเลย ตรง Swoosh nike มีความเป็นเอกลักษณ์มากๆ สีสันค่อนข้างสวยงามอยู่ในโทนของสีพาสเทล',
+        type: '2'
+      },
+      {
+        id: 3,
+        img: '/photo/ภาพถ่ายหน้าจอ 2567-06-02 เวลา 18.09.38.png',
+        name: 'JT 1',
+        traction: 'Traction',
+        tractiondetail: 'ระบบการเบรคของรองเท้าคู่นี้อยู่ในระดับปานกลาง ไม่หวือหวาเหมือนตัวอื่น เวลาเล่นอาจมีลื่นบ้างเพราะพื้นรองเท้าออกแบบลายมาน้อย ทำให้หยึดเกาะได้ไม่ดีเท่าที่ควร และตัวรองเท้าเองไม่มีเสียงเวลาเบรค',
+        cushion: 'Cushion',
+        cushiondetail: 'ระบบรองรับแรงกระแทกความรู้สึกครั้งแรกที่ใส่อยู่ระดับปานกลางมีความนิ่มและแข็งผสมอยู่ แต่เวลาใส่เล่นหรือวิ่งแล้วจะเหมือนรู้สึกเหยียบก้อนลมอะไรนิ่มๆอยู่ตรงหน้าเท้า จึงทำให้รองเท้าคู่นี้ใส่แล้วมีแรงดีดจากหน้าเท้าเพิ่มมากขึ้น',
+        lockdown: 'Lockdown',
+        lockdowndetail: 'ตัวรองเท้าเป็นแบบข้อต่ำ แต่วัสดุตรงข้อบางส่วนยังไม่แข็งแรงพอที่จะซัพพอร์ตข้อเท้าเรา เวลาใส่อาจทำให้เกิดการบาดเจ็บที่ข้อเท้าได้ง่ายถ้าไม่มัดเชือกให้แน่นและกระชับ',
+        weight: 'Weight',
+        weightdetail: 'การออกแบบถือว่าดูแปลกใหม่และมีส่วนเว้าในรองเท้าบางส่วนที่หายไปทำให้รองเท้าคู่นี้เบามากเวลาใส่เล่น',
+        type: '3'
+      },
+      {
+        id: 4,
+        img: '/photo/ภาพถ่ายหน้าจอ 2567-06-02 เวลา 18.11.07.png',
+        name: 'G.T.CUT 2',
+        traction: 'Traction',
+        tractiondetail: 'ระบบการเบรคของ G.T.CUT 2 ทำออกมาในระดับดีแต่ไม่ถึงขั้นดีมากเมื่อเราวิ่งมาเร็วๆแล้วเบรคอาจมีการลื่นของรองเท้าเล็กน้อย และเสียงเบรคของรองเท้าไม่มีเป็นเสียงเงียบๆเวลาเล่นแล้วไม่ค่อยสะใจ',
+        cushion: 'Cushion',
+        cushiondetail: 'ตอนได้ลองใส่เล่นครั้งแรกตัวพื้นรองเท้าจะแข็งนิดหน่อยและบางทำให้ได้ฟีลลิ่งเหมือนเหยียบสนามบาสโดยเราไม่ได้ใส่รองเท้า แต่เวลาออกแรงวิ่งจะรู้สึกนิ่มเล็กน้อย และได้รับแรงดีดจากหน้าเท้าชัดเจน',
+        lockdown: 'Lockdown',
+        lockdowndetail: 'ตัว Lockdown ใช้วัสดุที่ค่อนข้างแข็งแรง แต่ยังให้การเคลื่อนไหวที่เป็นอิสระจากรองเท้า',
+        weight: 'Weight',
+        weightdetail: 'การออกแบบรองเท้าคู่นี้ค่อนข้างโดดเด่นเพราะหน้าเท้าจะยกสูงขึ้นมาจากรองเท้าปกติ ทำให้เพิ่มแรงดีดตอนวิ่งได้ดีมากมาก',
+        type: '4'
+      },
+      {
+        id: 5,
+        img: '/photo/ภาพถ่ายหน้าจอ 2567-06-02 เวลา 18.11.31.png',
+        name: 'MB.02',
+        traction: 'Traction',
+        tractiondetail: 'ระบบเบรคของ MB.03 อยู้ในระดับปานกลาง แต่จะมีประสิทธิภาพมากถ้าเล่นในสนาม indoorพื้นไม้ขัด ตัวเบรคจะหนึบกว่าเดิม',
+        cushion: 'Cushion',
+        cushiondetail: 'ความรู้สึกที่ใส่พื้นค่อนข้างเหมือนเหยียบโฟม ความนิ่มปานกลางและแรงดีดจากรองเท้าก็ปานกลางไม่ได้มีแรงดีดจากรองเท้ามากขนาดนั้น ',
+        lockdown: 'Lockdown',
+        lockdowndetail: 'ตัวรองเท้าให้การออกแบบมาในข้อกลาง ค่อนข้างที่จะป้องกันข้อขาเราได้เป็นอย่างดี และก็ใช้วัสดุที่ยืดหยุ่นทำให้ข้อขาเรามีอิสระเวลาขยับ',
+        weight: 'Weight',
+        weightdetail: 'การออกแบบถือว่าออกแบบได้ออกมาดีๆมากๆสีสันฉูดฉาดสวยงาม และดีไซน์ลายเส้นออกมาได้เหมือนไฟ จุดเด่นของคู่นี้คือสีที่แตกต่างจากรองเท้าปกติทำให้มีเอกลักษณ์ในตัวของมันเอง ถ้าเอาไปใส่เล่นยังไงทุกคนก็หันมอง',
+        type: '5'
+      },
+      {
+        id: 6,
+        img: '/photo/ภาพถ่ายหน้าจอ 2567-06-02 เวลา 18.11.59.png',
+        name: 'MB.03',
+        traction: 'Traction',
+        tractiondetail: 'ระบบเบครทำออกมาได้คล้ายรุ่นก่อนหน้านี้ ความรู้สึกที่ใส่ไม่ต้างกันมาก ส่วนเสียงการเบรคก็ค่อนข้างเงียบทำให้เล่นแล้วไม่สะใจ',
+        cushion: 'Cushion',
+        cushiondetail: 'ความรู้สึกที่ใส่ต่างจากรองเท่ารุ่นก่อนมากพื้นค่อนข้างแข็งกว่าเดิม แต่ก็ยังมีแรงดีดจากรองเท้าเวลาใส่วิ่งเล็กน้อย',
+        lockdown: 'Lockdown',
+        lockdowndetail: 'Lockdown รุ่นนี้ถือว่าพัฒนาได้ดีขึ้นกว่าเดิมเป็นอย่างมาก ใช้วัสดุที่แข็งแรงขึ้นจากเดิม ทำให้ใส่แล้วจะป้องกันไม่ให้เกิดการบาดเจ็บที่ข้อเท้าได้เป็นอย่างดี',
+        weight: 'Weight',
+        weightdetail: 'การออกแบบก็สวยเท่ไม่ต่างจากคู่ก่อนเลยทีเดียว แต่จะมีลูกเล่นการเล่นลวดลายและสีที่รองเท้ามากขึ้น และใช้สีที่ค่อนข้างสด ทำให้ตัวรองเท้าเองหน้าสนใจจนคนมองเหมือนรุ่นก่อน',
+        type: '6'
+      }
+    ];
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+      document.querySelectorAll('.card > div').forEach((box) => {
+        box.addEventListener('click', (e) => {
+          let boxId = e.currentTarget.id;
+          let productId = parseInt(boxId.replace('box', ''));
+          let productDetail = product.find(p => p.id === productId);
+
+          document.getElementById('mdd-name').innerText = productDetail.name;
+          document.getElementById('mdd-img').src = productDetail.img;
+          document.getElementById('mdd-traction-detail').innerText = productDetail.tractiondetail;
+          document.getElementById('mdd-cushion-detail').innerText = productDetail.cushiondetail;
+          document.getElementById('mdd-lockdown-detail').innerText = productDetail.lockdowndetail;
+          document.getElementById('mdd-weight-detail').innerText = productDetail.weightdetail;
+          document.getElementById('modaldesc').style.display = 'block';
+        });
+      });
+    });
+
+    function closeModal() {
+      document.getElementById('modaldesc').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

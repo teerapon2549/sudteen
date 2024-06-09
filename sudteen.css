@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bg::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(45%);
+  background-image: url("https://cdn.nba.com/manage/2020/09/2020-finals-court.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.navBar {
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  height: 15vh;
+}
+
+.navBar ul {
+  display: flex;
+  align-items: center;
+}
+
+.navBar ul li {
+  padding: 0 25px;
+}
+
+.navBar ul li a {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+.navBar .logo a {
+  font-size: 2.3rem;
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.phuket {
+  color: #fff;
+  padding: 25px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+
+.card h2 {
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.card .box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+  width: 90%;
+  height: 220px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.box1 {
+  background-image: url("https://www.si.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_xy_center%2Cq_auto:good%2Cw_1200%2Cx_3213%2Cy_2093/MTk3MzYxMzEzNjQxNDA3OTEx/nike-lebron.jpg");
+}
+
+.box2 {
+  background-image: url("https://nypost.com/wp-content/uploads/sites/2/2023/05/ja-morant-3.jpg");
+}
+
+.box3 {
+  background-image: url("https://pbs.twimg.com/media/Fp32C-OacAUTHkO?format=jpg&name=large");
+}
+
+.box4 {
+  background-image: url("https://hoopshype.com/wp-content/uploads/sites/92/2023/01/1455889028.jpg?w=1024&h=576&crop=1");
+}
+
+.box5 {
+  background-image: url("https://img.buzzfeed.com/buzzfeed-static/complex/images/Y19jcm9wLGhfMTg0OCx3XzM1NDkseF8zNyx5XzE2/nkbz2d77b7ojludeggy1/puma-mb-02-lamelo-ball.jpg?downsize=900:*&output-format=auto&output-quality=auto");
+}
+
+.box6 {
+  background-image: url("https://about.puma.com/sites/default/files/styles/dd_image_slider/public/media/image-slider/23aw-bb-mb03-toxic-gym-0124-rgb.jpg?itok=IPM0rEW3");
+}
+
+.phuket h2 {
+  font-size: 2rem;
+  letter-spacing: 2.8px;
+}
+
+.text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.txt {
+  margin-left: 0; /* Align to the left */
+}
+
+.txt h1 {
+  font-size: 7rem;
+}
+
+.phuket p {
+  opacity: 0.4;
+}
+
+.tnx h2 i {
+  color: #fd7e13;
+}
+
+.card div {
+  transition: 0.5s;
+}
+
+.card div:hover {
+  transition: 0.3s;
+  transform: translateY(-10px);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.modal {
+  max-width: 100%;
+  height: 100%;
+  background: transparent !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  z-index: 1000;
+  
+
+  
+}
+
+.modal-page {
+  z-index: 99;
+  min-width: 50%;
+  max-width: 100%;
+  max-height: 500px;
+
+  overflow: scroll;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20vh;
+  
+}
+
+.modaldesc-content {
+  width: 100%;
+  display: flex;
+}
+
+.modaldesc-detail {
+  margin-left: 20px;
+}
+
+.modaldesc-img {
+  width: 20vw;
+  height: 20vw;
+  object-fit: contain;
+  
+}
+
+.btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.2vw;
+  transition: 0.3s;
+}
+
+.mdd-img {
+  border-radius: 20px;
+}
+
+#mdd-name {
+  text-align: start;
+}
+
+/* sudteen.css */
+
+/* Ensure the modal is centered and with a darker background */
+
+/* ซ้ำ */
+.modal-page {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* ซ้ำ */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* ซ้ำ */
+.modaldesc-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.modalscroll{
+  overflow:scroll;
+}
